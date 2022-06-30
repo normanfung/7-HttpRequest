@@ -1,0 +1,23 @@
+<div class="box">
+  <form>
+    <div class="field is-grouped">
+      <p class="control is-expanded">
+        <input
+          type="text"
+          #searchInput
+          placeholder="Enter Search Term"
+          [ngClass]="['input']"
+        />
+      </p>
+      <p class="control">
+        <button
+          type="submit"
+          class="button is-success"
+          (click)="searchQuery(searchInput.value, $event)"
+        >
+          Search
+        </button>
+      </p>
+    </div>
+  </form>
+</div>
